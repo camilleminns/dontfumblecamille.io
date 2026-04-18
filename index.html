@@ -303,9 +303,11 @@
     <div class="stat-block">
      ATTEMPTS TO FOLLOW-UP WITH CAMILLE: not found<br>
      <br>
-     DATE TIMER: <span class="red" id="countdown">12:59:30</span><br>
+     DATE TIMER: <span class="red" id="countdown">11:59:30</span><br>
      LOCATION: unconfirmed<br>
      TIME: unconfirmed<br>
+     <br>
+     It sucks that I even had to send this to you...
     </div>
   </div>
 
@@ -328,7 +330,7 @@
   }
 
   // Countdown
-  let h = 12, m = 59, s = 59;
+  let h = 11, m = 59, s = 59;
   setInterval(() => {
     s--; if (s < 0) { s = 59; m--; } if (m < 0) { m = 59; h--; } if (h < 0) { h = m = s = 0; }
     document.getElementById('countdown').textContent =
